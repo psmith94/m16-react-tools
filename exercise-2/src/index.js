@@ -6,6 +6,8 @@ import './css/index.css';
 import PageOne from './PageOne';
 import PageTwo from './PageTwo';
 import LandingPage from './LandingPage';
+import PageThree from './PageThree';
+
 
 // Render DOM -- wrapper in MuiThemeProvider for material-ui elements
 ReactDOM.render(
@@ -14,6 +16,8 @@ ReactDOM.render(
                 <IndexRoute component={LandingPage}/>
                 <Route path="page-1" component={PageOne}/>
                 <Route path="page-2" component={PageTwo}/>
+            	<Route path="page-3" component={PageThree}/>
+
             </Route>
         </Router>,
   document.getElementById('root')
